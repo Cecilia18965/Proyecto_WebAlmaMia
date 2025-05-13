@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="es"> 
+<!-- Etiqueta raíz del documento con idioma español -->
+
+<head> 
+    <meta charset="UTF-8">  
+    <!-- Establece la codificación de caracteres como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el diseño sea adaptable a dispositivos móviles -->
+
+    <title>Alma Mia</title>  
+    <!-- Título de la pestaña del navegador -->
+
+    <link rel="icon" href="img/Logo_.png" type="image/png">
+    <!-- Título de la pestaña del navegador -->
+
+    <link rel="stylesheet" href="style.css">   <!-- LINK con CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--BIBLIOTECA Font Awesome DE ICONOS-->
+
+    <!-- TIPOGRAFIA de GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>  
+  <!-- Cuerpo del documento -->
+
+        <header>
+          <!-- Encabezado principal del sitio -->
+
+            <nav>
+              <!-- Menú de navegación principal -->
+              <ul class="nav-lista">
+              <!-- Lista desordenada para los enlaces del menú -->
+
+                <a href="#login-modal" class="login-link">Iniciar sesión</a>
+                <!-- Enlace que apunta al modal de inicio de sesión (abre al hacer clic gracias al uso de "id") -->
+
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+               <!-- Datos del carrito --> 
+                <li class="carrito-dropdown">
+                  <a href="#" id="carrito-icono">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="contador-carrito">0</span>
+                  </a>
+                  <div class="carrito-contenido" style="display: none;">
+                    <ul id="lista-carrito"></ul>
+                  </div>
+                </li>  
+              </ul>
+            </nav>
+          </header>
+
+          <main class="seccion-principal">
+            <!-- Contenido principal de la página -->
+
+            <div class="contenido">
+              <!-- Caja contenedora de contenido principal -->
+              <h1>¡Bienvenidos a Alma Mia!</h1>
+              <!-- Título principal -->
+              <p>Descubrí productos artesanales hechos con amor, vas a encontrar detalles únicos para regalar o regalarte.🌿</p> 
+              <!-- Párrafo introductorio -->
+            </div>
+          </main>
+
+          <!-- Contenedor del modal. Se muestra cuando se hace clic en el enlace con href="#login-modal" -->
+          <div id="login-modal" class="modal">
+            
+            <div class="modal-contenido">
+            <!-- Caja interior que contiene el contenido del formulario -->
+
+              <a href="#" class="cerrar">×</a>
+              <!-- Enlace que “cierra” el modal al regresar a la parte superior de la página -->
+
+              <h2>Iniciar sesión</h2>
+                <form action="https://formspree.io/f/mleqewbo" method="POST"> 
+                  <!-- Campos de entrada obligatorios para email y contraseña -->
+                   
+                  <input type="email" name="email" placeholder="Su email" required>
+                  <input type="password" name="password" placeholder="Contraseña" required>
+                  
+                  <button type="submit">Ingresar</button>
+                  
+                  <div class="extra-links"> <!-- Enlaces adicionales bajo el botón -->
+                    <a href="#">Crear cuenta</a>
+                    <a href="#">Recuperar contraseña</a>
+                  </div>                
+              </form>
+            </div>
+          </div>
+
+         <!-- Sección ¿Quiénes somos? -->
+        <section id="quienes-somos">
+          <div class="contenedor-quienes-somos">
+            <img src="img/Nosotras.png" alt="Cecilia y Tamara" class="imagen-quienes-somos">
+            <div class="texto-quienes-somos">
+              <h2>Cecilia & Tamara</h2>
+              <p>
+                <strong>Bienvenidas a Alma Mía, nuestro rincón de sueños hecho realidad.</strong>
+                <br>Somos dos hermanas apasionadas por crear cuadernos con amor, y por eso transformamos esa pasión en un emprendimiento familiar. Para nosotras, no es solo una tienda: es un pedacito de nuestro corazón, un espacio donde se plasman sueños y emociones. 
+                <br>Cada cuaderno lleva una parte de nosotras, pero la verdadera magia comienza cuando vos lo llenás de vida, con tus palabras, dibujos o momentos especiales. Eso es lo que hace que todo valga la pena.
+                <br>Gracias por confiar en nosotras y ser parte de esta historia. 
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seccion de Productos -->
+        <section id="productos">
+          <h2>Nuestros Productos</h2>
+          <div class="contenedor-productos">
+          <!-- Más productos acá... -->
+            <!-- Cuaderno bruji -->
+            <div class="producto">
+              <img src="img/Cuaderno de bruji .jpg" alt="Cuaderno de bruji ">
+              <h3>Cuaderno de bruji </h3>
+              <p>Contiene 80 hojas Papel Kraft de 180 grs</p>
+              <p class="precio">$20.000,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+             <!-- Cuaderno liso tapa bordo -->
+             <div class="producto">
+              <img src="img/Cuarderno.jpeg" alt="Cuaderno Liso tapa bordo">
+              <h3>Cuaderno liso</h3>
+              <p>Una biblia de 150/180 hojas lisas se vuelve la perfección a la hora de dibuja o plasmar ideas, pensamientos...</p>
+              <p class="precio">$28.000,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <!-- Cuadernos cosidos -->
+            <div class="producto">
+              <img src="img/C.Liso.jpeg" alt="Cuadernos cosidos">
+              <h3>Cuadernos cosidos</h3>
+              <p>100 hojas lisas, cosido y con la tematica que quieras.</p>
+              <p class="precio">$15.000,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <!-- Anotadores 10x15 -->
+            <div class="producto">
+              <img src="img/Anotador.jpeg" alt="Anotadores10x15">
+              <h3>Anotadores rayados</h3>
+              <p>Anillados 10x15cm con la tematica que quieras.</p>
+              <p class="precio">$5.500,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <!-- Agenda docente -->
+            <div class="producto">
+              <img src="img/docente.jpeg" alt="Agenda Docente">
+              <h3>Agenda Docente</h3>
+              <p>Agenda de 12 cursos, para 44 alumnos con el nuevo régimen academico</p>
+              <p class="precio">$25.000,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+             <!-- Cuaderno Pediatrico -->
+             <div class="producto">
+              <img src="img/pediatrico.jpg" alt="Cuaderno Pediatrico">
+              <h3>Cuaderno Pediatrico</h3>
+              <p class="precio">$17.000,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+             <!-- Organizador diario -->
+             <div class="producto">
+              <img src="img/OrganizadorDiario.jpeg" alt="Organizador Diario">
+              <h3>Organizador Diario</h3>
+              <p>Planner Diario perpetuo.</p>
+              <p class="precio">$4.500,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+             <!-- Cuadernos anillados -->
+             <div class="producto">
+              <img src="img/Cuadernos.jpeg" alt="Cuadernos Anillados">
+              <h3>Cuadernos rayados</h3>
+              <p>Contienen 80 hojas ecologicas.</p>
+              <p class="precio">$10.000,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+             <!-- Agenda universitaria -->
+             <div class="producto">
+              <img src="img//C.universitario.jpeg" alt="Agenda universitaria">
+              <h3>Agenda universitaria</h3>
+              <p class="precio">$15.000,00</p>
+              <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ícono del carrito -->
+        <div class="carrito">
+          <span class="contador-carrito">0</span>
+        </div>
+
+         <!--Pie de página-->>
+        <footer class="main-footer">
+          <div class="footer-container">
+        
+            <!-- Enlaces rápidos -->
+            <div class="footer-section">
+              <h3>Enlaces</h3>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#quienes-somos">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-section">
+              <h3>Seguinos</h3>
+              <a href="https://www.facebook.com/AlmaMia02"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/almamiaencuadernacion/"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer-section">
+              <h3 id="contacto">Contacto</h3>
+              <p>📍 Tucumán 47,A.k Buenos Aires</p>
+              <p>📞 +54 11 6895-1441</p>
+              <p>✉️ almamiasublimacion@gmail.com</p>
+            </div>
+
+            <!-- Google maps -->
+            <div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.3994074141706!2d-58.37014322512314!3d-34.99670567835741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d33392fb4a11%3A0xcaa577be982dd2c5!2sTucum%C3%A1n%2047%2C%20B1864GAA%20Alejandro%20Korn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1746443513367!5m2!1ses!2sar"></iframe>
+            </div>
+          </div>
+
+          <!-- Parte inferior -->
+          <div class="footer-bottom">
+            <p>&copy; 2025 Alma Mia. Todos los derechos reservados.</p>
+            <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+          </div>
+        </footer>
+        
+        <!-- Font Awesome para íconos -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
+        <script src="carrito.js" defer></script> <!-- LINK con Js -->
+</body>
+
+</html>

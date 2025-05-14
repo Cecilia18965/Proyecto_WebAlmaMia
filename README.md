@@ -24,7 +24,4 @@ Este es un sitio web de una tienda virtual donde vas a encontrar productos artes
 
 ## 🌐 Visualizá el sitio
 
-👉 [Ver sitio en línea](https://tulink-de-netlify-o-github-pages.com)
-
-> Reemplazá el enlace con el link real una vez publicado.
-
+👉 [Ver sitio en línea](https://cecilia18965.github.io/Proyecto_WebAlmaMia/)

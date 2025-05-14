@@ -392,3 +392,45 @@ footer iframe {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   margin-top: 10px;
 }
+
+/* ============================ */
+/* MENÚ HAMBURGUESA RESPONSIVE  */
+/* ============================ */
+
+/* Botón hamburguesa oculto en escritorio */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #4e3e36;
+  padding: 10px 20px;
+}
+
+/* Estilos responsive para móvil */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Se muestra en pantallas pequeñas */
+  }
+
+  .nav-lista {
+    display: none;
+    flex-direction: column;
+    background-color: #e1cfc3;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-lista.show {
+    display: flex; /* Se muestra cuando tiene clase "show" */
+  }
+
+  .nav-lista a {
+    padding: 10px;
+    font-size: 18px;
+  }
+}

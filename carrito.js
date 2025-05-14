@@ -44,3 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+
+  const menuToggle = document.getElementById('menu-toggle');
+const navLista = document.getElementById('nav-lista');
+
+menuToggle.addEventListener('click', () => {
+  navLista.classList.toggle('show');
+});

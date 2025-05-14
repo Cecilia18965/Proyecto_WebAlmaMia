@@ -32,33 +32,35 @@
   <!-- Cuerpo del documento -->
 
         <header>
-          <!-- Encabezado principal del sitio -->
+        <!-- Encabezado principal del sitio -->
+          <nav>
+          <!-- Menú de navegación principal -->
+            <!-- Botón hamburguesa para móvil -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
 
-            <nav>
-              <!-- Menú de navegación principal -->
-              <ul class="nav-lista">
-              <!-- Lista desordenada para los enlaces del menú -->
+            <!-- Lista del menú -->
+            <ul class="nav-lista" id="nav-lista">
+              <li><a href="#login-modal" class="login-link">Iniciar sesión</a></li>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+              <li><a href="#contacto">Contacto</a></li>
 
-                <a href="#login-modal" class="login-link">Iniciar sesión</a>
-                <!-- Enlace que apunta al modal de inicio de sesión (abre al hacer clic gracias al uso de "id") -->
-
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-               <!-- Datos del carrito --> 
-                <li class="carrito-dropdown">
-                  <a href="#" id="carrito-icono">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="contador-carrito">0</span>
-                  </a>
-                  <div class="carrito-contenido" style="display: none;">
-                    <ul id="lista-carrito"></ul>
-                  </div>
-                </li>  
-              </ul>
-            </nav>
-          </header>
+              <!-- Ícono del carrito con contador -->
+              <li class="carrito-dropdown">
+                <a href="#" id="carrito-icono">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="contador-carrito">0</span>
+                </a>
+                <div class="carrito-contenido" style="display: none;">
+                  <ul id="lista-carrito"></ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
           <main class="seccion-principal">
             <!-- Contenido principal de la página -->
